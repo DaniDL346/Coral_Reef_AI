@@ -1,8 +1,8 @@
 # Project XYZ
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Coral Reef AI** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<img src="https://www.shutterstock.com/image-vector/clownfish-anemone-underwater-fish-sea-600nw-2276755039.jpg" width="100" height="100" /> 
 
 
 ## Dataset Content
@@ -11,6 +11,31 @@
 
 ## Business Requirements
 * Describe your business requirements
+
+1. Identify Presence of Coral Reefs
+
+    - Determine where Coral Reefs are present and the overall health status of coral reef ecosystems in different regions.
+
+
+2. Monitor Environmental Impacts
+
+    - Identify how environmental variables (e.g., salinity, temperature, silt and sulfide) are impacting coral health and diversity.
+
+
+3. Support Conservation Policies
+
+    - Provide data to inform and justify conservation efforts, protected areas, or intervention strategies.
+
+4. Predict At-Risk Areas
+
+    - Use predictive modeling to forecast which coral reef areas are most at risk under future environmental scenarios.
+
+5. Comply with Reporting Standards
+    - Align reporting with international biodiversity and environmental frameworks (e.g., SDG 14: Life Below Water, CBD targets).
+
+6. Engage Stakeholders
+    - Generate actionable insights for marine biologists, NGOs, government agencies, and local communities.
+
 
 
 ## Hypothesis and how to validate?
