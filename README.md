@@ -95,21 +95,38 @@ The ten columns consist of:
         - Provide data to inform and justify conservation efforts, protected areas, or intervention strategies.
             - A Dashboard was created in Power BI that allows none technical audience the ability to make informed decisions about where Coral Reefs are located and what environmental influences affect Coral Reefs.
             - A discussion about Conservation Policies are also found under the ethics section.
-            - A Machine Learning model, was also used to train data in order to predict if Coral Reefs are present or not. The accuracy proved to be at 1.00 using the Random Forest estimation. Which is very good.
+            
 
     ![Power BI dashboard overview](static_images/dashboard_ov.jpeg)
-
-
 
     4. Predict At-Risk Areas
 
         - Use predictive modeling to forecast which coral reef areas are most at risk under future environmental scenarios.
+            - A Machine Learning model, was also used to train data in order to predict if Coral Reefs are present or not. The accuracy proved to be at 1.00(100%) for both test and training data using the Random Forest Classifier. Which is very good. Grid Search CV was used to compare the best model and Random Forest Classifier proved to be the best.
+            - The best correlated features were also Salinity and January Temperature.
+
+    ![Machine Learning classifiers](static_images/ml_accuracy.png)
+
+    ![Machine Learning confusion matrix](static_images/confusion_ml.png)
+
+            - In the Dashboard, the third page on Predictive Analysis, uses a Decomposition Tree to break down the likelihood of Coral Reefs being present or not.
+
+
+    ![Dashboard Predictive Analysis](static_images/predictive_dash.png)
+            
 
     5. Comply with Reporting Standards
-        - Align reporting with international biodiversity and environmental frameworks (e.g., SDG 14: Life Below Water, CBD targets).
+        - Align reporting with GDPR data protection standards and international biodiversity and environmental frameworks (e.g., SDG 14: Life Below Water, CBD targets).
+            - All align with the reporting standards as it obeys the GDPR data protection standards where no personal data was shared. 
+            - A discussion is provided under Ethics as to the SDG 14: Life Below Water standards, which were also followed, as the data was collected in a non threatening way, for example, satellite data, which still adheres to the protection of biodiversity species such as Coral Reefs.
 
     6. Engage Stakeholders
         - Generate actionable insights for marine biologists, NGOs, government agencies, and local communities through a built-in interactive Dashboard.
+            - A Dashboard was created in Power BI, which has a Descriptive Statistics analysis, Geographical Analysis and Predictive Analysis page for Stakeholders to interactive with and make decisions.
+            - Unfortunately, due to limitations of Power BI not having the premium version an interactive map could not be produced. This map is a mere approximation of where the Corals are located as I overlaid a georectified image behind the scatterplot of latitude and longitude. However if you zoom in, the points do not move with the image. It is only used as an overview.
+
+    ![Dashboard Geographical Analysis](static_images/geo_analysis.png)
+
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
