@@ -57,13 +57,13 @@ The ten columns consist of:
 
 1. Identify the Presence of Coral Reefs
 
-        - Determine where Coral Reefs are present and the where coral reef ecosystems occur.
-            - Various visualisations were used to identify the presence of coral reefs. The correlation matrix was used to understand which features were highly correlated, such as Salinity, Silt or Sulfide(inverse relationship), January Temperature and Latitude, Type of Sea was depended on Longitude. 
+    - Determine where Coral Reefs are present and the where coral reef ecosystems occur.
+        - Various visualisations were used to identify the presence of coral reefs. The correlation matrix was used to understand which features were highly correlated, such as Salinity, Silt or Sulfide(inverse relationship), January Temperature and Latitude, Type of Sea was depended on Longitude. 
 
 
     ![Correlation_Matrix](static_images/corr_matrix.png) 
 
-            - Further investigations were done in scatter and bar plots with Salinity vs Corals, in order to test at what value of Salinity was needed for Corals to exist. I found that no corals existed below the value of 24.5. There was also an overlap between 24 and 32 where both corals were present and absent. This is when other natural factors came into place for example temperature, presence of Silt or Sulfide had an inverse effect and latitude or longitude. Salinity was definity the highest feature that determined if Coral Reefs were present or absent.
+    - Further investigations were done in scatter and bar plots with Salinity vs Corals, in order to test at what value of Salinity was needed for Corals to exist. I found that no corals existed below the value of 24.5. There was also an overlap between 24 and 32 where both corals were present and absent. This is when other natural factors came into place for example temperature, presence of Silt or Sulfide had an inverse effect and latitude or longitude. Salinity was definity the highest feature that determined if Coral Reefs were present or absent.
 
      ![Salinity vs Corals](static_images/sal_coral.png)   
 
@@ -109,7 +109,7 @@ The ten columns consist of:
 
     ![Machine Learning confusion matrix](static_images/confusion_ml.png)
 
-            - In the Dashboard, the third page on Predictive Analysis, uses a Decomposition Tree to break down the likelihood of Coral Reefs being present or not.
+    - In the Dashboard, the third page on Predictive Analysis, uses a Decomposition Tree to break down the likelihood of Coral Reefs being present or not.
 
 
     ![Dashboard Predictive Analysis](static_images/predictive_dash.png)
@@ -130,17 +130,44 @@ The ten columns consist of:
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
+    - ETL & EDA analysis with input raw dataset
+    - Advanced visualisations and Statistical analysis for a technical audience
+    - Machine Learning Predictions
+    - Power BI Dashboard creation for non-technical audience
+    - README documentation summarising the investigation 
+
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
+    - Data was managed in a file system called Dataset/raw and Dataset/cleaned as saved as a .csv file.
+    - HTML maps were also supplied and stored in this folder
+    - Jupyter notebooks folder stored the necessary notebook files for ETL, Visualisations and Machine Learning code.
+    - Static images folder was used for storing the screenshots within the README file.
+    - A separate file for the Dashboard called Coral_Reef_AI.pbix was added for Power BI viewing.
+
 * Why did you choose the research methodologies you used?
+    - I chose the research methodologies as it gave me the best results to produce a project on this scale. It is well structured and provided the best results.
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
+    - To understand the relationship between Salinity and Coral Reef present, I used scatter plots and bar charts to understand where most of the Coral Reefs are present. 
+    - A further investigation was to look at the area of overlap between Coral Reefs being present and absent. This with the help of a geographic map, pointed to the presence of Silt and Sulfide that influenced if Coral Reefs were present. The presence of Silt and Sulfide, has a medium priority importance value on if Coral Reefs are present or not. However Salinity has the highest priority, without it, it does not survive.
+    - I also used Plotly to produce geographical maps of the location of Coral Reefs, together with other information (when you over over the map, more feature informations appear). This can be found in under /Dataset/HTML_maps. 
+    - Geographical maps together with temperature data also pointed to a medium to low priority importance value between January and June temperatures. With high temperatures, the Coral Reefs thrived, however Coral Reefs can also exist at lower temperatures as seen on the geographical maps at the Artic and Antartica. As long as the presence of Salinity and balance of Silt and Sulfide exists.
+    - Pie charts and Bar charts were used to represent the Type of Sea were the ecosystem exists, showing that Marginal and Partially enclosed environments were where most Coral Reefs were located. There was no data on no land boundary environments and enclosed landlocked did not point to Coral Reefs being present. There were not a lot of data on those last Type of Sea descriptions.
+    - The Bar Chart on the size of the area vs Corals present, did not influence as much as seen on the correlation matrix. If Corals were present, then the size of the area was big. This could be due to their growing nature, if the conditions are good and balanced. 
 
 ## Analysis techniques used
 * List the data analysis methods used and explain limitations or alternative approaches.
+    - Power BI limitation: I could not plot a geographic map. I overcame it by plotting a scatterplot of the Latitude and Longitude and using the other features in the Tooltip to view the other information. I overlaid a rectified image behind the scatterplot as an image, it allows the user to have a better understanding of the location of the point, however when you zoom in, the position shifts, so it cannot be used as the exact position.
+    - Plotly geographical map: Unfortunately, my dataset from Kaggel only gave me data of the middle and eastern countries with Coral Reefs and excluded North and South America. The North and South American data points were used as testing in the Kaggel users account, so I could not use that. I plotted the data only of the middle and eastern countries.
+
 * How did you structure the data analysis techniques. Justify your response.
+    - I structured my analysis for a technical and non-technical audience. The technical audience can use the Jupyter notebooks to make decisions and the non-technical audience can use the Power BI Dashboard to better their understanding.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
+    - No, I did not have data limitations.
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+    - I used ChatGPT4.0 and Copilot to assist me with coding problems and research.
+    - ChatGPT helped me research Ethics, Biases and Legal considerations when investigating a Coral Reef dataset.
+    - Copilot assisted me in commenting my code and optimising the code for better plotting.
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
