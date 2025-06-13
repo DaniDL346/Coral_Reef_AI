@@ -171,7 +171,108 @@ The ten columns consist of:
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
+    - Ethical Considerations in Coral Reef Datasets
+
+        1. Environmental Stewardship
+            - Use the data responsibly to support conservation, not exploitation or greenwashing.
+            - Ensure data is used to benefit ecosystems and communities, not harm them.
+        2. Transparency
+            - Be clear about how the data was collected, any limitations, and the methods of analysis.
+            - Avoid overstating results, especially when used for public policy or media.
+        3. Community Impact
+            - Consider how data affects local communities reliant on reefs (e.g., fishers, indigenous populations)
+            - Include local knowledge and experiences where possible.
+        4. Data Privacy (in human-related datasets)
+            - If the dataset contains metadata related to human activities (e.g., fishery data, tourism), personal or community-level privacy should be preserved.
+        5. Data Sharing and Licensing
+            - Respect the terms under which data is shared, particularly from international agencies or local authorities.
+            - Open data is great — but it must be ethical and properly cited.
+        6. Inclusivity
+            - Ensure diverse perspectives (e.g., local scientists, indigenous communities) are part of the interpretation and use of the data.
+        7. Responsible Modeling
+            - Avoid using coral reef datasets to create overly simplistic or misleading predictive models (e.g., overfitting, ignoring ecological complexity).
+    - Potential Biases in Coral Reef Datasets
+
+        1. Sampling Bias
+            - Reefs near research stations or easier-to-access locations (e.g., close to shore, in tourist areas) are overrepresented.
+            - Remote or deeper reefs may be under-sampled, giving a skewed global picture.
+        2. Temporal Bias
+            - Data may only be collected during certain seasons (e.g., dry season), missing seasonal variations.
+            - Datasets may be outdated due to funding or logistical limits.
+        3. Observer Bias
+            - Subjective measurements like “coral health” or “coverage” can vary between researchers.
+            - Diver-based visual assessments can vary based on skill or experience.
+        4. Technological Bias
+            - Use of older vs. newer monitoring technologies (e.g., satellite vs. drone vs. diver) affects resolution and accuracy.
+        5. Data Imbalance
+            - Some coral species or regions may be overrepresented due to funding or geopolitical focus.
+            - Lack of data on socio-ecological variables (e.g., human activity impact).
+        6. Publication/Reporting Bias
+            - More dramatic or negative changes may be reported and shared more often, distorting perceptions of reef resilience.
+        7. Modeling Bias
+            - Predictive models may reinforce existing assumptions if trained on biased or incomplete data (e.g., assuming all reefs respond the same way to warming).
+
+    - Data Privacy Considerations
+        1. Location Sensitivity
+            - Some coral reef data includes precise GPS coordinates that may identify protected areas, research stations, or vulnerable ecosystems.
+            - Avoid disclosing exact locations if it could lead to over-tourism, poaching, or environmental degradation.
+        2. Indigenous Rights
+            - If the reefs are located in or near indigenous lands or marine territories, ensure that the data respects their cultural, legal, and ecological rights.
+            - Follow Free, Prior, and Informed Consent (FPIC) principles when using data that may involve traditional knowledge.
+        3. Third-party Sources
+            - If the dataset is derived from government or academic bodies (e.g. NOAA, UNEP, or universities), check their terms of use, licenses, or data-sharing agreements.
+        4. Sensitive Environmental Zones
+            - Data from marine protected areas (MPAs) should be handled with caution.
+            - Ensure data usage aligns with conservation goals and doesn’t support exploitative activities.
+
 * How did you overcome any legal or societal issues?
+    - Data Governance Principles
+        1. Data Provenance
+            - Keep a clear record of where the data came from, how it was collected (e.g., satellite, diver surveys, sonar), and who is responsible for it.
+        2. Metadata Documentation
+            - Maintain metadata on:
+                - Temporal scope (e.g., year of measurement)
+                - spatial resolution
+                - Collection method
+                - Confidence intervals or quality notes.
+        3. Data Quality & Validation
+            - Use data validation pipelines to identify anomalies (e.g., salinity > 50 PSU).
+            - Cross-check with reputable sources like NASA OceanColor, ReefBase, or Coral Reef Watch.
+        4. Access Control
+            - If parts of the dataset are restricted (e.g., because of sensitive biodiversity info), apply role-based access control.
+            - Make sure that internal researchers and external users have appropriate permissions.
+        5. Ethical Use Policy
+            - Establish a data use agreement that prevents misuse (e.g., mining or tourism companies exploiting reef vulnerability data).
+            - Promote open science with boundaries — e.g., “freely available for conservation and research use only.”
+        6. Data Lifecycle Management
+            - Define how long data will be stored, when it will be archived, and under what circumstances it will be deleted or shared.
+
+    - Legal Implications
+        1. Data Protection and Privacy Laws
+            - If human interaction data is included (e.g., tourism, fishing patterns, or local community reports), GDPR (EU), CCPA (California), or other regional privacy laws might apply.
+            - You must ensure that personal data is anonymized and that any collection of identifiable information has proper consent and justification.
+        2. Intellectual Property and Licensing
+            - Datasets from government agencies (like NOAA or UNEP) may come with usage restrictions or licenses (e.g., CC BY 4.0).
+            - Using satellite or proprietary survey data might require explicit permission or attribution.
+        3. Environmental Regulations
+            - If the findings influence marine conservation or zoning (e.g., marine protected areas), they could fall under environmental protection laws.
+            - Misuse or misreporting of data could lead to legal action by conservation authorities or misguide policy decisions.
+
+    - Social Implications
+        1. Impact on Indigenous and Local Communities
+            - Coral reefs often sit near coastal and island communities. Data use must consider local knowledge, cultural ties to the reef, and potential displacement risks if policies change based on findings.
+            - Engage with communities to ensure inclusive, respectful representation in data interpretation.
+        2. Data Bias and Equity
+            - If the dataset is biased (e.g., only representing reefs in wealthier or more accessible regions), conclusions may neglect vulnerable reef systems.
+            - Using only Western scientific methods can undervalue traditional ecological knowledge.
+        3. Public Perception and Policy Influence
+            - Findings that show reef degradation can be powerful—but they must be communicated responsibly to avoid panic or misinformation.
+            - Accurate reporting may influence funding, conservation strategies, and political agendas.
+        4. Tourism and Economic Outcomes
+            - Regions with healthier reefs may see increased tourism interest. This can lead to economic opportunity or ecological stress, depending on how the information is handled.
+            - Conversely, data showing reef degradation could affect local livelihoods reliant on reef-related tourism or fishing.
+
+
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
