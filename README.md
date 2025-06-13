@@ -276,17 +276,43 @@ The ten columns consist of:
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
+    - Page 1: Overview
+        - Line and stacked column chart was used as the main figure to show that with the presence of silt and sulfide, Coral reefs are more absent compared to when no silt or sulfides are present.
+        - Cards: Used for totals of Corals counted, average of Salinity presented
+        - Slicer: Used to filter out Corals present or absent as button and also Area filter as a slider
+        - Gauge: Used to preview Temperature range for both January and June Temperatures
+        - Donut Pie Chart: Displays the Sea Type Enclosure
+        - Stacked Column chart: Used to display Silt or Sulfide vs Type of Sea
+        - Text box: Heading/Title
+    - Page 2: Geographical Analysis
+        - Scatter chart with image: To indicate the location of corals, I also used the tooltips to add more information into the dot points.
+        - Line Chart: To show January and June temperature across latitudes and that the highest temperature is close to 0 degrees latitude at the equator. This is where Coral Reefs thrive the most.
+        - Table: To display and filter the name of the Sea you are interested in
+        - Slicer: Dropdown to filter out the name of the Sea you are interested in
+        - Card: Used to display the result if Corals are present or absent
+    - Page 3: Predictive Analysis
+        - Decomposition Tree: This was used to do a predictive analysis on the data. I fed in all the columns from highest priority to lower priority and ended up with my target column - "coral". This allows the user to explore and choose various options in order to explore if corals will be present or absent.
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?
+    - Power BI Dashboard was used to communicate to a non-technical audience
+    - Jupyter Notebooks for the ETL, Visualisations and Machine Learning was used for the more technical audiences.
 * Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+    - Stakeholders and decision makers in the government can use the Dashboard to identify where Coral Reefs are present, in order to help conserve and protect these locations. New findings can also be brought to their attention, Coral Reefs thrive in colder locations too, such as the Artic and Antartica.
+    - The Dashboard is made interactive so that when you filter out a feature or click on a point, the information in the graphs change, allowing the user to zone into target areas.
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
+    - Power BI had limitations as it did not provide me with the premium version to create geographical maps. I had a work around it, but plotting a scatterplot and georectifying an image below it.
+    - Dataset only contained the middle and eastern countries, so only analysis could be done on the middle and eastern areas where Coral Reefs were located.
 * Did you recognise gaps in your knowledge, and how did you address them?
+    - I asked my peers, Vasi (facilitator) and Googled information on areas I did not understand. I also used the Code Institute LMS to more understanding.
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+    - I asked Vasi to review my Dashboard for relevant information and design style, I was afraid that the colours were too bold. He reassured me I was on the right track and gave good feedback.
+    - My peers and I are in constant discussion on reviewing our documents and they provide insights in areas I forgot to add or do not know about.
 
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
+    - 
 * What new skills or tools do you plan to learn next based on your project experience? 
 
 ## Deployment
