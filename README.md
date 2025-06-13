@@ -6,7 +6,7 @@
 
 
 ## Dataset Content
-* Dhe dataset is named "Corals Worldwide Distribution", from [Kaggle]( https://www.kaggle.com/datasets/natalialimanska/corals-worldwide-distribution/data?select=corals_worldwide_test_set.csv). It consists of 10 columns and 2451 rows, it is 205 kB in size.
+* The dataset is named "Corals Worldwide Distribution", from [Kaggle]( https://www.kaggle.com/datasets/natalialimanska/corals-worldwide-distribution/data?select=corals_worldwide_test_set.csv). It consists of 10 columns and 2451 rows, it is 205 kB in size.
 
 The ten columns consist of:
   1. name: sea name
@@ -292,6 +292,7 @@ The ten columns consist of:
         - Card: Used to display the result if Corals are present or absent
     - Page 3: Predictive Analysis
         - Decomposition Tree: This was used to do a predictive analysis on the data. I fed in all the columns from highest priority to lower priority and ended up with my target column - "coral". This allows the user to explore and choose various options in order to explore if corals will be present or absent.
+    -  
 * Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 * How were data insights communicated to technical and non-technical audiences?
     - Power BI Dashboard was used to communicate to a non-technical audience
@@ -312,36 +313,33 @@ The ten columns consist of:
 
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
-    - 
+    - Learning new Machine Learning models and how to use them, I did a lot of reading and practiced on a few models to get my understanding right.
 * What new skills or tools do you plan to learn next based on your project experience? 
+    - Machine Learning models with CNN and using other deep learning models.
 
 ## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+Deployment: The Dashboard was published onto Power BI's web application under this  [link](https://app.powerbi.com/groups/me/reports/cf30d4d0-8348-4c76-af10-225ab42292c1/636ebc225bf7d6e5ebd3?experience=power-bi)
 
 
 ## Main Data Analysis Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+    - **pandas**: For data manipulation and analysis (e.g., reading CSV files, cleaning, and transforming data).
+    - **numpy**: For numerical operations and array handling.
+    - **matplotlib**: For creating static data visualizations such as bar charts and scatter plots.
+    - **seaborn**: For advanced statistical data visualization, including correlation matrices and heatmaps.
+    - **plotly**: For interactive and geographical visualizations (e.g., mapping coral reef locations).
+    - **scikit-learn**: For machine learning tasks, including model training, evaluation, and GridSearchCV.
+    - **jupyter**: For interactive coding and documentation.
+    - **os**: For file and directory operations.
+    - **warnings**: To manage warning messages during analysis.
 
 
-## Credits 
-
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+## Credits  
 
 * Sources
 
 Data Sources on Kaggel taken from these resources:
+- https://www.kaggle.com/datasets/natalialimanska/corals-worldwide-distribution/data?select=corals_worldwide_test_set.csv
 - https://www.ranker.com/list/coral-reef-pictures/robert-desalvo
 - https://www.waisworkshop.org/sites/waisworkshop.org/files/files/ASEP-final.pdf
 - http://www.sargassoseacommission.org/storage/documents/SargassoBrochure.FIN.pdf
@@ -449,11 +447,6 @@ Data Sources on Kaggel taken from these resources:
 - https://www.sciencedirect.com/science/article/pii/S0079661121001592
 - https://oceanexplorer.noaa.gov/facts/explored.html
 
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
@@ -462,5 +455,5 @@ Data Sources on Kaggel taken from these resources:
 
 
 
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+## Acknowledgements 
+* Thank you to my husband, daughter, Vasi and my peers who provided support through this project.
